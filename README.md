@@ -6,6 +6,7 @@
 <li>3. bower i jquery normalize.css modernizer -S</li>
 <li>4. bower i bpopup -S</li>
 <li>5. npm i gulp browser-sync -D</li>
+<li>npm install jade --global</li>
 <li>6. gulp</li>
 </ul>
 
