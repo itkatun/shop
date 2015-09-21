@@ -1,3 +1,4 @@
 {
-	"directory" : "app/bower"
+	"directory": "_dev/_bower",
+	"analytics": false
 }
