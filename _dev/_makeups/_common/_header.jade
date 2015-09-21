@@ -1,0 +1,36 @@
+header.header
+    .header__top
+        .container
+            ul.header__sosials
+                each social in ['vk', 'fb', 'tw']
+                    li(class="header__socials-item header__socials-item_" + social)
+                        a(href="#").header__socials-link
+            .header__address г. Москва, ул. Новая 246, офис 214
+            a(href="tel.:+79213221232").header__phone
+                sup.header__phone-code +7 (921)
+                span.header__phone-num 322 12 32
+    .header__bottom
+        .container
+            a(href="#").header__logo
+                img(src="/img/logo/header__logo.png").header__logo-img
+                span.header__logo-text ЭпплShop
+            .header__search
+                form(action="", method="get")
+                    input(type="text", placeholder="Найти").header__search-input
+                    input(type="submit", value="Поиск").header__search-submit
+            ul.header__menu
+                li.header__menu-item
+                    a(href="#").header__menu-link Карта проезда
+                li.header__menu-item
+                    a(href="#").header__menu-link История заказов
+                li.header__menu-item.header__menu-item_basket
+                    a(href="#").header__menu-link Корзина (3)
+                    .header__basket
+                        ul.header__basket-list
+                            each product, indx in ['iPhone 6', 'iPad Air Wi-Fi + Cellular 128GB - silver', 'Mackbook Air']
+                                li.header__basket-item
+                                    a(href="#").header__basket-inner
+                                        .header__basket-pic
+                                            img(src="//lorempixel.com/60/50/technics/" + indx)
+                                        .header__basket-text--wrap
+                                            .header__basket-text= product
