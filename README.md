@@ -1,4 +1,4 @@
-# loftschool-shop
+# shop
 <h1>Как установить мой проект</h1>
 
 <ul>
